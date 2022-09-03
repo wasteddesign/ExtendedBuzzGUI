@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{14E74129-8EEE-4E7B-9635-EBF78770FD82}</ProjectGuid>
+    <OutputType>library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BuzzGUI.SequenceEditor</RootNamespace>
+    <AssemblyName>BuzzGUI.SequenceEditor</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BuzzGUI">
+      <HintPath>Gear\Generators\BuzzGUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="BuzzGUI.Common">
+      <HintPath>Gear\Generators\BuzzGUI.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="BuzzGUI.Interfaces">
+      <HintPath>Gear\Generators\BuzzGUI.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Modern Sequence Editor.NET">
+      <HintPath>Gear\Generators\Modern Sequence Editor.NET.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actions\SetTimeSignatureAction.cs" />
+    <Compile Include="Actions\TSLInsertOrDeleteAction.cs" />
+    <Compile Include="BrushSet.cs" />
+    <Compile Include="CursorElement.cs" />
+    <Compile Include="EditContext.cs" />
+    <Compile Include="MarkerControl.xaml.cs">
+      <DependentUpon>MarkerControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MIDIExporter.cs" />
+    <Compile Include="PatternAssociationsList.cs" />
+    <Compile Include="PatternEx.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyChangedEventArgsPattern.cs" />
+    <Compile Include="SelectionLayer.cs" />
+    <Compile Include="SequenceEditorSettings.cs" />
+    <Compile Include="StepEditWindow.xaml.cs">
+      <DependentUpon>StepEditWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PatternElement.cs" />
+    <Compile Include="PatternVisual.cs" />
+    <Compile Include="PatternVisualCache.cs" />
+    <Compile Include="TrackBackgroundElement.cs" />
+    <Compile Include="TimelineElement.cs" />
+    <Compile Include="TimeSignatureList.cs" />
+    <Compile Include="TrackControl.xaml.cs">
+      <DependentUpon>TrackControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TrackHeaderControl.xaml.cs">
+      <DependentUpon>TrackHeaderControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSettings.cs" />
+    <None Include="..\rel\1.1\Themes\Default\SequenceEditor\SequenceEditor.xaml">
+      <Link>Theme\SequenceEditor.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </None>
+    <Page Include="MarkerControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StepEditWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SequenceEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="SequenceEditor.xaml.cs">
+      <DependentUpon>SequenceEditor.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="TrackControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TrackHeaderControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>powershell -Command "Start-Process cmd -ArgumentList('/C', 'COPY /Y \"$(SolutionDir)\bin\*\" \"C:\Program Files (x86)\Jeskola\Buzz\"')"  -Verb RunAs
+</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>powershell -Command "Start-Process cmd -ArgumentList('/C', 'COPY /Y  \"C:\Program Files (x86)\Jeskola\Buzz\Gear\Generators\Modern Sequence Editor.NET.dll\" \"$(SolutionDir)\Gear\Generators\"')"  -Verb RunAs
+powershell -Command "Start-Process cmd -ArgumentList('/C', 'COPY /Y  \"C:\Program Files (x86)\Jeskola\Buzz\Gear\Generators\Info.NET.dll\" \"$(SolutionDir)\Gear\Generators\"')"  -Verb RunAs
+</PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

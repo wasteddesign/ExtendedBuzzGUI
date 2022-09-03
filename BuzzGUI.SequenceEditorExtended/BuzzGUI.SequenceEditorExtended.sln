@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuzzGUI.SequenceEditor", "BuzzGUI.SequenceEditor.csproj", "{14E74129-8EEE-4E7B-9635-EBF78770FD82}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		AVX (Intel)|Any CPU = AVX (Intel)|Any CPU
+		AVX (Intel)|x64 = AVX (Intel)|x64
+		AVX|Any CPU = AVX|Any CPU
+		AVX|x64 = AVX|x64
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		SSE2 with symbols|Any CPU = SSE2 with symbols|Any CPU
+		SSE2 with symbols|x64 = SSE2 with symbols|x64
+		SSE2_Intel|Any CPU = SSE2_Intel|Any CPU
+		SSE2_Intel|x64 = SSE2_Intel|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14E74129-8EEE-4E7B-9635-EBF78770FD82}.AVX (Intel)|Any CPU.ActiveCfg = AVX (Intel)|Any CPU
+		{14E74129-8EEE-4E7B-9635-EBF78770FD82}.AVX (Intel)|Any CPU.Build.0 = AVX (Intel)|Any CPU
+		{14E74129-8EEE-4E7B-9635-EBF78770FD82}.AVX (Intel)|x64.ActiveCfg = AVX (Intel)|x64
+		{14E74129-8EEE-4E7B-9635-EBF78770FD82}.AVX (Intel)|x64.Build.0 = AVX (Intel)|x64
+		{14E74129-8EEE-4E7B-9635-EBF78770FD82}.AVX|Any CPU.ActiveCfg = AVX|Any CPU
+		{14E74129-8EEE-4E7B-9635-EBF78770FD82}.AVX|Any CPU.Build.0 = AVX|Any CPU
+		{14E74129-8EEE-4E7B-9635-EBF78770FD82}.AVX|x64.ActiveCfg = AVX|x64
+		{14E74129-8EEE-4E7B-9635-EBF78770FD82}.AVX|x64.Build.0 = AVX|x64
+		{14E74129-8EEE-4E7B-9635-EBF78770FD82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14E74129-8EEE-4E7B-9635-EBF78770FD82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14E74129-8EEE-4E7B-9635-EBF78770FD82}.Debug|x64.ActiveCfg = Debug|x64
+		{14E74129-8EEE-4E7B-9635-EBF78770FD82}.Debug|x64.Build.0 = Debug|x64
+		{14E74129-8EEE-4E7B-9635-EBF78770FD82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14E74129-8EEE-4E7B-9635-EBF78770FD82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14E74129-8EEE-4E7B-9635-EBF78770FD82}.Release|x64.ActiveCfg = Release|x64
+		{14E74129-8EEE-4E7B-9635-EBF78770FD82}.Release|x64.Build.0 = Release|x64
+		{14E74129-8EEE-4E7B-9635-EBF78770FD82}.SSE2 with symbols|Any CPU.ActiveCfg = SSE2 with symbols|Any CPU
+		{14E74129-8EEE-4E7B-9635-EBF78770FD82}.SSE2 with symbols|Any CPU.Build.0 = SSE2 with symbols|Any CPU
+		{14E74129-8EEE-4E7B-9635-EBF78770FD82}.SSE2 with symbols|x64.ActiveCfg = SSE2 with symbols|x64
+		{14E74129-8EEE-4E7B-9635-EBF78770FD82}.SSE2 with symbols|x64.Build.0 = SSE2 with symbols|x64
+		{14E74129-8EEE-4E7B-9635-EBF78770FD82}.SSE2_Intel|Any CPU.ActiveCfg = SSE2_Intel|Any CPU
+		{14E74129-8EEE-4E7B-9635-EBF78770FD82}.SSE2_Intel|Any CPU.Build.0 = SSE2_Intel|Any CPU
+		{14E74129-8EEE-4E7B-9635-EBF78770FD82}.SSE2_Intel|x64.ActiveCfg = SSE2_Intel|x64
+		{14E74129-8EEE-4E7B-9635-EBF78770FD82}.SSE2_Intel|x64.Build.0 = SSE2_Intel|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {687827A7-8EFD-47A3-A971-DEFAD04747CF}
+	EndGlobalSection
+EndGlobal
